@@ -14,13 +14,24 @@ const Hello: React.FunctionComponent<HelloProps> = () => {
             setAnimate(!animate);
             if (animate !== true) {
                 expandFunc()
+                closeLink()
                 setTimeout(() => {
                     location.replace('/about')
                 }, 2000)
+
             } else {
                 closeFunc()
             }
         }
+    }
+
+    const closeLink = () => {
+        console.log('dong')
+        document.getElementById('hello-link').classList.remove('fastFadeIn')
+        setTimeout(() => {
+            document.getElementById('hello-link').classList.add('fadeOut')
+
+        }, 1000)
     }
 
     const expandFunc = () => {
@@ -41,28 +52,27 @@ const Hello: React.FunctionComponent<HelloProps> = () => {
 
     const slowShow = () => {
         setTimeout(() => {
-            console.log('ding')
             document.getElementById('hello-link').classList.add('showDiv', 'fastFadeIn')
             document.getElementById('hello-link').classList.remove('hideDiv')
         }, 2500)
     }
 
     return (
-        <section className="container-fluid hello-container fadeIn">
+        <section className="container-fluid hello-container fastFadeIn">
             <div className="row img-section">
                 <img src="images/bham.jpeg" alt="birmingham skyline" className="first-section-img" />
                 <div>
-                <div className="hello-title" >
-                    <div className="col m-3">Heather Till</div>
-                </div>
-                <div className="hello-display-div hideDiv" id="hello-link">
-                    <div className="middle-layer">
-                        <div className="inner-layer">
-                            <div className="hello-display" id="circle-text"
-                                onClick={(e: React.MouseEvent<HTMLDivElement>) => handleAnimate(e)}>Click Here</div>
+                    <div className="hello-title" >
+                        <div className="col m-3">Heather Till</div>
+                    </div>
+                    <div className="hello-display-div hideDiv" id="hello-link">
+                        <div className="middle-layer">
+                            <div className="inner-layer">
+                                <div className="hello-display" id="circle-text"
+                                    onClick={(e: React.MouseEvent<HTMLDivElement>) => handleAnimate(e)}>Click Here</div>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
                 {slowShow()}
             </div>

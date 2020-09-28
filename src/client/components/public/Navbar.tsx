@@ -14,7 +14,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
     const workId = location.pathname === "/work" ? "active-item" : "";
 
     return (
-        <section className="nav-section sticky-top" >
+        <section className="nav-section" >
             <Menu
                 disableAutoFocus
                 noOverlay

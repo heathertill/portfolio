@@ -46,6 +46,9 @@ $font-barlow: 'Barlow Semi Condensed', sans-serif;
     max-width: 100vw;
     background-color: $myBlue;
 }
+body {
+    // background-color: $myBlue;
+}
 
 // *** Work style ***
 .work-section {
@@ -141,6 +144,11 @@ $font-barlow: 'Barlow Semi Condensed', sans-serif;
 
 .fadeOut {
     animation: fadeOut 1s;
+    animation-fill-mode: both;
+}
+
+.slowFadeOut {
+    animation: fadeOut 1.5s;
     animation-fill-mode: both;
 }
 
@@ -246,10 +254,11 @@ div.bm-menu-wrap {
 // *** Hello style ***
 .hello-container {
     padding: 0;
+    // background-color: $myDenim;
 }
 
 .img-section {
-    height: 75.5vh;
+    height: 65vh;
     margin-left: 0;
     transition: height 2s;
 }
@@ -262,7 +271,7 @@ div.bm-menu-wrap {
     position: absolute;
     object-fit: cover;
     width: 100vw;
-    height: 75.5vh;
+    height: 65vh;
     transition: height 2s;
 }
 .first-section-img.toggled {
@@ -358,14 +367,18 @@ div.bm-menu-wrap {
 // *** About style ***
 .about {
     width: 100vw;
+    // background-color: $myDenim;
 }
 
 .about-left {
     padding: 0;
     width: 50vw;
     height: 750px;
-    background-color: #030d12;
+    // background-color: #030d12;
+    background-color: #040404;
+
 }
+
 
 .about-img-div {
     width: 50vw;
@@ -387,7 +400,7 @@ div.bm-menu-wrap {
     }
 }
 
-@media screen and (min-width: 1053px) {
+    @media screen and (min-width: 1157px) {
     .about-image {
         height: 750px;
         width: 51vw;
@@ -414,6 +427,7 @@ div.bm-menu-wrap {
     font-size: 8em;
     line-height: 1;
     color: $myWhite;
+    margin-bottom: .2em;
 }
 
 .about-text-content {
