@@ -63,7 +63,7 @@ const Hello: React.FunctionComponent<HelloProps> = () => {
                 <img src="images/bham.jpeg" alt="birmingham skyline" className="first-section-img" />
                 <div>
                     <div className="hello-title" >
-                        <div className="col m-3">Heather Till</div>
+                        <div className=" hello-title-text col m-3">Heather Till</div>
                     </div>
                     <div className="hello-display-div hideDiv" id="hello-link">
                         <div className="middle-layer">
