@@ -1,3 +1,7 @@
+To run the app - npm run dev
+
+to push changes to heroku - git push heroku master
+
 # Barebones React/TypeScript/Express/Sass Boilerplate
 This project is a starting point for a TypeScript based React app that also has a local API server using express.
 
