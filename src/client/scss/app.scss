@@ -7,6 +7,7 @@ $theme-colors: (
     'mySky': #4b7d95,
     'myDenim': #25556a,
     'myMidnight': #11272d,
+    'myBlue': #05466b
 );
 
 $myRed: #d80f09;
@@ -192,7 +193,8 @@ body {
     position: fixed;
     width: 60px;
     height: 30px;
-    right: 36px;
+    // right: 36px;
+    left: 36px;
     top: 36px;
 }
 
@@ -285,6 +287,8 @@ div.bm-menu-wrap {
     font-size: 2.5em;
     transition: display;
     transition-delay: 1.9s;
+    position: absolute;
+    right: 0;
 }
 
 .hello-title-text {
@@ -411,7 +415,7 @@ div.bm-menu-wrap {
     .about-image {
         height: 750px;
         width: 51vw;
-        object-fit: contain;
+        object-fit: cover;
         position: absolute;
         left: 0;
         // max-width: 550px;
@@ -548,6 +552,11 @@ li {
     font-size: 2em;
 }
 
+.footer-icons-accent {
+    font-size: 1em;
+    padding-top: .35em;
+}
+
 .legend {
     position: relative;
     justify-content: center;
@@ -555,3 +564,47 @@ li {
     left: 50%;
     transform: translate(-50%);
 }
+
+// *** Contact Page style ***
+
+.contact-page-container {
+    padding: 0;
+}
+
+.contact-img {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact-link-div {
+    position: absolute;
+    right: 3em;
+    top: 3em;
+    font-size: 1em;
+    color: $myBlue;
+    background-color: $myWhite;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 4px;
+    // border-style: solid;
+    // border-color: $myMidnight;
+}
+
+.contact-link {
+    margin-bottom: 3em;
+}
+
+// .contact-icon-div {
+//     margin-top: 1.25em;
+//     margin-bottom: 1em;
+//     display: flex;
+//     justify-content: center;
+//     left: 50%;
+//     transform: translate(-50%);
+//     position: relative;
+//     top: 10%;
+// }

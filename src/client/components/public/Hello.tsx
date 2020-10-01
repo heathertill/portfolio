@@ -26,7 +26,6 @@ const Hello: React.FunctionComponent<HelloProps> = () => {
     }
 
     const closeLink = () => {
-        console.log('dong')
         document.getElementById('hello-link').classList.remove('fastFadeIn')
         setTimeout(() => {
             document.getElementById('hello-link').classList.add('fadeOut')

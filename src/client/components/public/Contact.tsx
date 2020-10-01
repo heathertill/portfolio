@@ -41,9 +41,6 @@ const Contact: React.FunctionComponent<ContactProps> = () => {
             Swal.fire({ title: 'Please check required fields', backdrop: `rgb(239, 239, 239)` })
             setSaveStatus('')
         }
-        // else if (saveStatus === 'error') {
-
-        // }
     };
 
 

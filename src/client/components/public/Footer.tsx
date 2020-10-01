@@ -7,7 +7,6 @@ export interface FooterProps { }
 const Footer: React.FunctionComponent<FooterProps> = () => {
 
 
-
     return (
         <section className="footer-main container">
                 <div className="icon-div">

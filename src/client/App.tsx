@@ -2,6 +2,7 @@ import * as React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import './scss/app';
 
@@ -11,9 +12,10 @@ import About from './components/public/About';
 import Contact from './components/public/Contact';
 import Work from './components/public/Work';
 import Footer from './components/public/Footer';
+import ContactPage from './components/public/ContactPage';
 
 const myLibrary: any = library
-    myLibrary.add(fab)
+    myLibrary.add(fab, fas)
 
 const App: React.FunctionComponent<AppProps> = () => {
     return (
@@ -23,6 +25,7 @@ const App: React.FunctionComponent<AppProps> = () => {
                 <Switch>
                     <Route exact path='/' component={Hello} />
                     <Route exact path='/about' component={About} />
+                    <Route exact path='/contactPage' component={ContactPage} />
                     <Route exact path='/contact' component={Contact} />
                     <Route exact path='/work' component={Work} />
                     <Route exact path='/footer' component={Footer} />
