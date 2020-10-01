@@ -67,7 +67,7 @@ const Work: React.FunctionComponent<WorkProps> = () => {
         setTimeout(() => {
             document.getElementById(id).classList.add('showDiv');
             document.getElementById(id).classList.remove('hideDiv')
-        }, 1500)
+        }, 2000)
     }
     const hideDiv = (id: string) => {
         setTimeout(() => {
@@ -95,8 +95,8 @@ const Work: React.FunctionComponent<WorkProps> = () => {
                             <img src="images/shopComp.png" alt="shoping app" className="card-img-top" />
                             <div className="card-title work-card-title">Shopping</div>
                             <div className="card-text hideDiv" id="shop-content">
-                                <div className="text-myWhite">This is a fullstack shopping app. Users login and add items to the group shopping list. When items are purchased or removed the user who added the item will recieve a text informing them of the items status.</div>                              
-                                <button onClick={() => openApp("https://stormy-sea-01231.herokuapp.com")}>See it working!</button>
+                                <div className="text-myWhite work-card-text">This is a fullstack shopping app. Users login and add items to the group shopping list. When items are purchased or removed the user who added the item will recieve a text informing them of the items status.</div>                              
+                                <button className="btn btn-myMidnight rounded-pill" onClick={() => openApp("https://stormy-sea-01231.herokuapp.com")}>See it working!</button>
                             </div>
                         </div>
                     </div>
@@ -106,8 +106,8 @@ const Work: React.FunctionComponent<WorkProps> = () => {
                             <img src="images/blogComp.png" alt="blog app" className="card-img card-img-top" />
                             <div className="card-title work-card-title">Blog</div>
                             <div className="hideDiv" id="blog-content">
-                                <div className="card-text">Stuff about the app</div>
-                                <button className="" onClick={() => openApp("https://limitless-bastion-43539.herokuapp.com")}>See it working!</button>
+                                <div className="card-text work-card-text">This is a fullstack blog app with authentication. Users are able to view, create, edit or delete blog posts depending on the user role.</div>
+                                <button className="btn btn-myMidnight rounded-pill" onClick={() => openApp("https://limitless-bastion-43539.herokuapp.com")}>See it working!</button>
                             </div>
                         </div>
                     </div>

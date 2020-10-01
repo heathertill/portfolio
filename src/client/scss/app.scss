@@ -2,46 +2,31 @@ $theme-colors: (
     'myRed': #ff3b3f,
     'myDkgrey': #50514f,
     'myMedblue': #a9a9a9,
-    'myEggplant': #4b3b47,
     'myWhite': #f4f4ef,
     'mySky': #4b7d95,
     'myDenim': #25556a,
     'myLtDenim': #357a97,
     'myMidnight': #11272d,
-    'myBlue': #05466b
+    'myBlue': #05466b,
 );
 
 $myRed: #d80f09;
-// $myBlack: #030708;
-// $myCream: #ded2c5;
-$myEgg: #4b3b47;
 $myGold: #c9923d;
 $myWhite: #f4f4ef;
 $myBlue: #05466b;
-$myGrey: #48443d;
 $mySky: #4b7d95;
-// $myDark: #50514f;
 $myDenim: #25556a;
 $myLtDenim: #357a97;
 $myMidnight: #11272d;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
-$font-cardo: 'Cardo', serif;
-// *** body text
-$font-dosis: 'Dosis', sans-serif;
-$font-oswald: 'Oswald', sans-serif;
-// $font-vast: 'Vast Shadow', cursive;
-// *** title text
 $font-play: 'Playfair Display', serif;
 $font-barlow: 'Barlow Semi Condensed', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap');
 
 .container {
     margin-left: 0;
@@ -57,10 +42,8 @@ body {
 
 // *** Work style ***
 .work-section {
-    // background-color: $myGrey;
-    background-image: radial-gradient(circle, $myWhite 41%, $myGold 100%);
+    background: linear-gradient(to right, $myMidnight, $myWhite, $myMidnight);
     overflow: auto;
-    // height: 90vh;
 }
 
 .work-background {
@@ -93,7 +76,6 @@ body {
 .work-div {
     display: flex;
     justify-content: center;
-    // height: 74%;
 }
 
 .work-card-div {
@@ -131,14 +113,22 @@ body {
 }
 
 .blog.toggled {
-    width: 40em;
-    height: 40em;
+    width: 35em;
+    height: 45em;
     margin-right: 10em;
 }
 
 .work-card-title {
-    font-size: 1.75em;
+    font-size: 2em;
+    line-height: 1;
     color: $myWhite;
+    font-family: $font-play;
+}
+
+.work-card-text {
+    height: 8em;
+    font-size: 1.5em;
+    font-family: $font-barlow;
 }
 
 .showDiv {
@@ -199,7 +189,6 @@ body {
     position: fixed;
     width: 60px;
     height: 30px;
-    // right: 36px;
     left: 36px;
     top: 36px;
 }
@@ -222,7 +211,8 @@ div.bm-menu-wrap {
 .bm-menu {
     background: #a9a9a9;
     padding: 2.5em 1.5em 0;
-    font-family: $font-cardo;
+    font-family: $font-play;
+
     font-size: 1.15em;
     width: 100vw;
 }
@@ -262,7 +252,6 @@ div.bm-menu-wrap {
 // *** Hello style ***
 .hello-container {
     padding: 0;
-    // background-color: $myDenim;
 }
 
 .img-section {
@@ -298,7 +287,7 @@ div.bm-menu-wrap {
 }
 
 .hello-title-text {
-    letter-spacing: .005em;
+    letter-spacing: 0.005em;
 }
 
 .hello-title.toggled {
@@ -351,7 +340,7 @@ div.bm-menu-wrap {
 .hello-display {
     padding-top: 21%;
     font-size: 2em;
-    font-family: $font-dosis;
+    font-family: $font-barlow;
     line-height: 1;
 }
 
@@ -366,12 +355,12 @@ div.bm-menu-wrap {
 
 .hello-intro {
     font-size: 3.5em;
-    font-family: $font-oswald;
+    font-family: $font-barlow;
     font-weight: 200;
 }
 
 .hello-body {
-    font-family: $font-oswald;
+    font-family: $font-barlow;
     font-weight: 200;
     font-size: 2.5em;
     padding-left: 1.5em;
@@ -380,18 +369,14 @@ div.bm-menu-wrap {
 // *** About style ***
 .about {
     width: 100vw;
-    // background-color: $myDenim;
 }
 
 .about-left {
     padding: 0;
     width: 50vw;
     height: 750px;
-    // background-color: #030d12;
     background-color: #040404;
-
 }
-
 
 .about-img-div {
     width: 50vw;
@@ -399,10 +384,6 @@ div.bm-menu-wrap {
     text-align: center;
     white-space: nowrap;
     position: relative;
-}
-
-.about-image {
-    // max-width: 600px;
 }
 
 @media screen and (max-width: 10530px) {
@@ -417,14 +398,13 @@ div.bm-menu-wrap {
     }
 }
 
-    @media screen and (min-width: 873px) {
+@media screen and (min-width: 873px) {
     .about-image {
         height: 750px;
         width: 51vw;
         object-fit: cover;
         position: absolute;
         left: 0;
-        // max-width: 550px;
     }
 }
 
@@ -432,8 +412,6 @@ div.bm-menu-wrap {
     height: 750px;
     padding: 0;
     background-color: $myDenim;
-    // background-color: $myEgg;
-
 }
 
 .about-text {
@@ -447,7 +425,7 @@ div.bm-menu-wrap {
     font-size: 4.5em;
     line-height: 1;
     color: $myWhite;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
 }
 
 .about-text-content {
@@ -467,9 +445,6 @@ div.bm-menu-wrap {
     font-size: 1.5em;
     color: $myGold;
     background-color: $myLtDenim;
-    // border: none;
-    // border-color: $myEgg;
-    // margin-bottom: 10px;
     border-style: solid;
     border-radius: 5px;
     padding: 3px;
@@ -483,7 +458,6 @@ div.bm-menu-wrap {
     text-align: center;
     width: 100vw;
     background-color: $myLtDenim;
-
 }
 
 .skills-title {
@@ -522,7 +496,7 @@ li {
     margin: 0;
     border-style: solid;
     border-color: $myMidnight;
-    border-radius: .3em;
+    border-radius: 0.3em;
     color: $myMidnight;
 }
 
@@ -568,7 +542,7 @@ li {
 
 .footer-icons-accent {
     font-size: 3em;
-    padding-top: .35em;
+    padding-top: 0.35em;
 }
 
 .legend {
@@ -607,21 +581,8 @@ li {
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 4px;
-    // border-style: solid;
-    // border-color: $myMidnight;
 }
 
 .contact-link {
     margin-bottom: 2.5em;
 }
-
-// .contact-icon-div {
-//     margin-top: 1.25em;
-//     margin-bottom: 1em;
-//     display: flex;
-//     justify-content: center;
-//     left: 50%;
-//     transform: translate(-50%);
-//     position: relative;
-//     top: 10%;
-// }
