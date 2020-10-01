@@ -8,8 +8,8 @@ export interface WorkProps { }
 const Work: React.FunctionComponent<WorkProps> = () => {
 
     const [animate, setAnimate] = useState(false);
-    const [showShopping, setShowShopping] = useState(false);
-    const [showBlog, setShowBlog] = useState(false)
+    // const [showShopping, setShowShopping] = useState(false);
+    // const [showBlog, setShowBlog] = useState(false)
 
     const handleShoppingAnimate = (e: React.MouseEvent<HTMLDivElement>) => {
         if (e) {
@@ -83,10 +83,8 @@ const Work: React.FunctionComponent<WorkProps> = () => {
 
     return (
         <section className="work-section fadeIn">
-            <img src="images/codeScreen.png" alt="computer code image" className="work-background" />
+            {/* <img src="images/codeScreen.png" alt="computer code image" className="work-background" /> */}
             <div className="work-over">
-                {/* <img src="images/codeScreen.png" alt="computer code image" className="work-background" /> */}
-                {/* <div className="work-div"> */}
                 <div className="work-intro">
                     <h1 className="work-title">Check out some of my work...</h1>
                 </div>
@@ -111,7 +109,6 @@ const Work: React.FunctionComponent<WorkProps> = () => {
                                 <div className="card-text">Stuff about the app</div>
                                 <button className="" onClick={() => openApp("https://limitless-bastion-43539.herokuapp.com")}>See it working!</button>
                             </div>
-                            {/* </div> */}
                         </div>
                     </div>
                 </div>
