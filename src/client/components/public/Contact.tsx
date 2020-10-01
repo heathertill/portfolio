@@ -50,8 +50,9 @@ const Contact: React.FunctionComponent<ContactProps> = () => {
             <form className="form-group email-form"
                 onSubmit={(e) => handleEmail(e)} >
                 <div className="title-div">
-                <div className="contact-title">Contact</div>
-            </div>
+                    <div className="contact-title">Contact</div>
+                </div>
+                <div className="input-div">
                 <div className="email-div m-3">
                     <label className="">Full Name (required)</label>
                     <input type="text" value={name} className="input-style input-group p-2 px-4"
@@ -69,11 +70,12 @@ const Contact: React.FunctionComponent<ContactProps> = () => {
                 </div>
                 <div className="message-div m-3">
                     <label className="">Message</label>
-                    <textarea rows={10} value={message} className="input-style input-group p-2 px-4"
+                    <textarea rows={4} value={message} className="input-style input-group p-2 px-4"
                         onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)} />
                 </div>
                 <div className="button-div">
-                    <button type="submit" className="btn btn-myEggplant rounded-pill m-3">Send</button>
+                    <button type="submit" className="btn btn-block btn-myMidnight rounded-pill m-3">Send</button>
+                </div>
                 </div>
                 {handleConfirm()}
             </form>

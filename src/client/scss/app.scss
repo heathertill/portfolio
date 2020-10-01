@@ -502,28 +502,30 @@ li {
     height: inherit;
     width: 100vw;
     background-color: #efefef;
+    padding: 7em;
 }
 
 .email-form {
-    padding: 5em;
+    padding: 2em;
     margin: 0;
+    border-style: solid;
+    border-color: $myMidnight;
+    border-radius: .3em;
+    color: $myMidnight;
 }
-
-// .title-div {
-
-// }
 
 .contact-title {
     font-size: 5em;
     color: #50514f;
+    line-height: 1;
 }
 
-// .email-div {
-
-// }
+.input-div {
+    padding: 1em;
+}
 
 .input-style {
-    font-size: 2em;
+    font-size: 1.25em;
     background-color: #efefef;
     border-style: solid;
     border-width: 0.5px;
