@@ -6,6 +6,7 @@ $theme-colors: (
     'myWhite': #f4f4ef,
     'mySky': #4b7d95,
     'myDenim': #25556a,
+    'myLtDenim': #357a97,
     'myMidnight': #11272d,
     'myBlue': #05466b
 );
@@ -21,14 +22,17 @@ $myGrey: #48443d;
 $mySky: #4b7d95;
 // $myDark: #50514f;
 $myDenim: #25556a;
+$myLtDenim: #357a97;
 $myMidnight: #11272d;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 $font-cardo: 'Cardo', serif;
+// *** body text
 $font-dosis: 'Dosis', sans-serif;
 $font-oswald: 'Oswald', sans-serif;
 // $font-vast: 'Vast Shadow', cursive;
+// *** title text
 $font-play: 'Playfair Display', serif;
 $font-barlow: 'Barlow Semi Condensed', sans-serif;
 
@@ -48,7 +52,7 @@ $font-barlow: 'Barlow Semi Condensed', sans-serif;
     background-color: $myBlue;
 }
 body {
-    // background-color: $myBlue;
+    background-color: $myBlue;
 }
 
 // *** Work style ***
@@ -425,7 +429,9 @@ div.bm-menu-wrap {
 .about-right {
     height: 750px;
     padding: 0;
-    background-color: #4b3b47;
+    background-color: $myDenim;
+    // background-color: $myEgg;
+
 }
 
 .about-text {
@@ -436,7 +442,7 @@ div.bm-menu-wrap {
 
 .about-text-heading {
     font-family: $font-play;
-    font-size: 6em;
+    font-size: 4.5em;
     line-height: 1;
     color: $myWhite;
     margin-bottom: .2em;
@@ -445,7 +451,7 @@ div.bm-menu-wrap {
 .about-text-content {
     font-family: $font-barlow;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.7em;
     line-height: 1.2;
     color: #efefef;
 }
@@ -458,10 +464,10 @@ div.bm-menu-wrap {
     font-family: $font-barlow;
     font-size: 1.5em;
     color: $myGold;
-    background-color: $myEgg;
-    border: none;
-    border-color: $myEgg;
-    margin-bottom: 10px;
+    background-color: $myLtDenim;
+    // border: none;
+    // border-color: $myEgg;
+    // margin-bottom: 10px;
     border-style: solid;
     border-radius: 5px;
     padding: 3px;
@@ -474,10 +480,12 @@ div.bm-menu-wrap {
 .skills-section {
     text-align: center;
     width: 100vw;
-    background-color: $myDenim;
+    background-color: $myLtDenim;
+
 }
 
 .skills-title {
+    font-family: $font-play;
     font-size: 2em;
     color: $myWhite;
 }
@@ -485,12 +493,14 @@ div.bm-menu-wrap {
 .about-skills {
     color: $myWhite;
     text-align: left;
-    font-family: $font-dosis;
+    font-family: $font-barlow;
+    font-weight: 300;
 }
 
 .skill-list {
     list-style: disc;
-    font-size: 30px;
+    font-size: 1.7em;
+    line-height: 1.4;
 }
 
 li {
@@ -555,7 +565,7 @@ li {
 }
 
 .footer-icons-accent {
-    font-size: 1em;
+    font-size: 3em;
     padding-top: .35em;
 }
 
@@ -571,6 +581,9 @@ li {
 
 .contact-page-container {
     padding: 0;
+}
+.contact-img-div {
+    height: 100vh;
 }
 
 .contact-img {
@@ -597,7 +610,7 @@ li {
 }
 
 .contact-link {
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 
 // .contact-icon-div {

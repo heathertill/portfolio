@@ -33,35 +33,35 @@ const About: React.FunctionComponent<AboutProps> = () => {
                 </div>
             </div>
             <div className="skills-section p-3">
-                <div className="skills-title">My Skills</div>
+                <div className="skills-title">Some of my Skills</div>
                 <div className="row about-skills py-3 mx-5">
                     <div className="col-md">
                         <ul className="skill-list">
                             <li>ReactJS</li>
+                            <li>Express.js</li>
                             <li>React Native</li>
+                            <li>Node.js</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div className="col-md">
+                        <ul className="skill-list">
                             <li>JQuery</li>
                             <li>DOM</li>
                             <li>MySQL</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                    <div className="col-md">
-                        <ul className="skill-list">
                             <li>CSS</li>
                             <li>SASS</li>
-                            <li>JavaScript</li>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>Socket.io</li>
+                            <li>GitHub</li>
                         </ul>
                     </div>
                     <div className="col-md">
                         <ul className="skill-list">
-                            <li>JSON</li>
-                            <li>GitHub</li>
+                            <li>Atom</li>
                             <li>VSCode</li>
+                            <li>Socket.io</li>
                             <li>Stripe</li>
-                            <li>TWilio</li>
+                            <li>Twilio</li>
                             <li>Mailgun</li>
                         </ul>
                     </div>

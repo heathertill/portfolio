@@ -1,7 +1,4 @@
 import * as React from 'react';
-import { useState, useReducer } from 'react';
-import HamburgerMenu from 'react-hamburger-menu';
-import { handleAnimation } from '../../utils/formService';
 import { fallDown as Menu } from 'react-burger-menu'
 
 export interface NavbarProps { }
@@ -24,7 +21,6 @@ const Navbar: React.FunctionComponent<NavbarProps> = () => {
                 <a id={aboutId} href="/about" className="menu-item" >About</a>
                 <a id={workId} href="/work" className="menu-item">Work</a>
                 <a id={contactPageId} href="/contactPage" className="menu-item">Contact</a>
-                {/* <a id={contactId} href="/contact" className="menu-item">Contact</a> */}
             </Menu>
         </section>
     );

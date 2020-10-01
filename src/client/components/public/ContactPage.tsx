@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Footer from '../public/Footer';
 
 
 export interface ContactPageProps { }
@@ -14,7 +15,7 @@ const ContactPage: React.FunctionComponent<ContactPageProps> = () => {
                     <div className="contact-link">
                         <h2>Contact me by email</h2>
                         <div className="icon-div">
-                            <div className="footer-icons px-4">
+                            <div className="footer-icons-accent px-4">
                                 <a className="text-myBlue" href="/contact">
                                     <FontAwesomeIcon icon={['fas', 'envelope-square']} />
                                 </a>

@@ -2,6 +2,8 @@ import * as React from 'react';
 import { useState } from 'react';
 import { email } from '../../utils/mailgun';
 import Swal from 'sweetalert2';
+import Footer from '../public/Footer';
+
 
 export interface ContactProps { }
 
@@ -79,6 +81,7 @@ const Contact: React.FunctionComponent<ContactProps> = () => {
                 </div>
                 {handleConfirm()}
             </form>
+            <Footer />
         </section>
     );
 }
